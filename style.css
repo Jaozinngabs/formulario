@@ -4,13 +4,17 @@ body {
     margin: 0;
     margin-top: 8%;
     padding: 0;
+    background-image: url(fundinn.jpg); /* Adicione o caminho correto para a imagem */
+    background-size: cover; /* Para que a imagem cubra toda a área do formulário */
+    background-position: center; /* Para centralizar a imagem */
 }
 
 form {
     max-width: 600px;
     margin: 20px auto;
     margin-top: 2%;
-    background: #eeecec;
+    background: rgba(255, 255, 255, 0.5); /* Adicione uma cor de fundo com opacidade */
+    backdrop-filter: blur(10px); /* Adicione um filtro de desfoque */
     padding: 20px;
     border-radius: 5px;
     transition: all 0.3s ease;
@@ -18,7 +22,7 @@ form {
 
 h1 {
     text-align: center;
-    color: #7c040e;
+    color: #af5603;
     margin-bottom: 30px;
 }
 
@@ -60,4 +64,7 @@ input[type="submit"] {
     width: 100%;
     font-size: 16px;
     transition: transform 0.3s ease, background-color 0.3s ease;
+}
+input, textarea {
+    backdrop-filter: blur(10px);
 }
